@@ -10,13 +10,13 @@ fi
 nvm use $NODE_VERSION
 
 # You may want to run this if you change node version
-#rm -rf node_modules/
-#npm i
+rm -rf node_modules/
+npm i
 
 # install a custom npm version
-#if [ $(npm -v) != "6.14.9" ]
-#then npm i -g npm@6.14.9
-#fi
+if [ $(npm -v) != "6.14.9" ]
+then npm i -g npm@6.14.9
+fi
 
 #just to check if any package is missing
 npm outdated | grep "MISSING"
